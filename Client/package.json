@@ -1,0 +1,20 @@
+{
+  "name": "insta-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "browserify main.js -t babelify --outfile bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -p 8081",
+    "tunnel": "ngrok http 8081"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "ngrok": "^2.2.3",
+    "superagent": "^2.3.0",
+    "superagent-promise": "^1.1.0"
+  }
+}

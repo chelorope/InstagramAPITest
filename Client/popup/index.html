@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Popup Callback</title>
+  </head>
+  <body bgcolor=white>
+    <script type="text/javascript">
+      window.opener.popupCallback(location.hash.split('=')[1]); //Call callback function
+      window.close(); // Close the current popup
+    </script>
+  </body>
+</html>
